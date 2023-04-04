@@ -10,5 +10,8 @@ const config: StorybookConfig = {
     name: "@storybook/nextjs",
     options: {},
   },
+  features: {
+    buildStoriesJson: true,
+  },
 };
 export default config;
