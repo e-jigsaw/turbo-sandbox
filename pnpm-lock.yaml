@@ -83,9 +83,13 @@ importers:
   apps/web:
     specifiers:
       '@babel/core': ^7.0.0
+      '@storybook/jest': ^0.1.0
+      '@storybook/react': ^7.0.2
+      '@storybook/testing-library': ^0.1.0
       '@types/node': ^17.0.12
       '@types/react': ^18.0.22
       '@types/react-dom': ^18.0.7
+      constate: ^3.3.2
       eslint: 7.32.0
       eslint-config-custom: workspace:*
       next: ^13.1.1
@@ -95,12 +99,16 @@ importers:
       typescript: ^4.5.3
       ui: workspace:*
     dependencies:
+      constate: 3.3.2_react@18.2.0
       next: 13.2.4_hrdbe576m4w26u2yfpqpvbxyky
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       ui: link:../../packages/ui
     devDependencies:
       '@babel/core': 7.21.3
+      '@storybook/jest': 0.1.0
+      '@storybook/react': 7.0.2_ygqkwb4gg3aean7xjfdauovyqq
+      '@storybook/testing-library': 0.1.0
       '@types/node': 17.0.45
       '@types/react': 18.0.30
       '@types/react-dom': 18.0.11
@@ -6004,6 +6012,14 @@ packages:
   /console-control-strings/1.1.0:
     resolution: {integrity: sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==}
     dev: true
+
+  /constate/3.3.2_react@18.2.0:
+    resolution: {integrity: sha512-ZnEWiwU6QUTil41D5EGpA7pbqAPGvnR9kBjko8DzVIxpC60mdNKrP568tT5WLJPAxAOtJqJw60+h79ot/Uz1+Q==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /content-disposition/0.5.4:
     resolution: {integrity: sha512-FveZTNuGw04cxlAiWbzi6zTAL/lhehaWbTtgluJh4/E95DqMwTmha3KZN1aAWA8cFIhHzMZUvLevkw5Rqk+tSQ==}
